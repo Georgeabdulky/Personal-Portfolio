@@ -1,167 +1,1004 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>George Abdulky | Portfolio</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="George Abdulky - Computer Science student at Syracuse University. Explore my software development, web development, and technology projects."
+  />
+
+  <title>George Abdulky | Computer Science Portfolio</title>
 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <header class="navbar">
-    <div class="logo">George Abdulky</div>
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
 
-    <nav>
+  <header class="navbar">
+
+    <a href="#home" class="logo">
+      George<span>.</span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="menu-toggle"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="nav-menu">
+
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
-      <a href="#contact">Contact Information</a>
+      <a href="#contact">Contact</a>
+
     </nav>
+
   </header>
 
-  <section class="hero">
 
-    <div class="hero-text">
+  <main>
 
-      <h1>
-        Hello, I’m <span class="highlight">George</span>.
-      </h1>
+    <!-- =========================
+         HERO
+    ========================== -->
 
-      <p>
-        <span id="typing-text"></span>
+    <section id="home" class="hero">
+
+      <div class="hero-text">
+
+        <p class="hero-label">
+          COMPUTER SCIENCE • SOFTWARE DEVELOPMENT
+        </p>
+
+        <h1>
+          Hello, I’m
+          <span class="highlight">George.</span>
+        </h1>
+
+        <p class="hero-description">
+
+          I’m a Computer Science student at Syracuse University
+          building modern digital experiences and turning ideas
+          into functional software.
+
+        </p>
+
+        <div class="typing-container">
+          <span id="typing-text"></span>
+          <span class="cursor">|</span>
+        </div>
+
+        <div class="hero-buttons">
+
+          <a href="#projects" class="btn primary-btn">
+            View My Projects
+          </a>
+
+          <a href="#contact" class="btn secondary-btn">
+            Contact Me
+          </a>
+
+        </div>
+
+
+        <div class="hero-socials">
+
+          <a
+            href="https://github.com/georgeabdulky"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub ↗
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/george-abdulky-0949512a0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn ↗
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-image">
+
+        <div class="image-wrapper">
+
+          <img
+            src="profile.jpg"
+            alt="Portrait of George Abdulky"
+          />
+
+          <div class="image-status">
+
+            <span class="status-dot"></span>
+
+            Open to opportunities
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section id="about" class="section reveal">
+
+      <div class="section-heading">
+
+        <span class="section-number">01.</span>
+
+        <div>
+          <p class="section-label">WHO I AM</p>
+          <h2>About Me</h2>
+        </div>
+
+      </div>
+
+
+      <div class="about-grid">
+
+        <div class="about-text">
+
+          <p>
+
+            I’m <strong>George Abdulky</strong>, a Computer Science
+            student at Syracuse University with a passion for
+            technology, software development, and building meaningful
+            digital experiences.
+
+          </p>
+
+          <p>
+
+            I enjoy combining creativity with problem-solving,
+            whether that means developing interactive websites,
+            building software projects, experimenting with new
+            technologies, or transforming an idea into something
+            people can actually use.
+
+          </p>
+
+          <p>
+
+            Outside of school, I have worked in customer-focused
+            technology roles at <strong>Apple</strong>, where I
+            strengthened my communication, teamwork, adaptability,
+            and technical problem-solving skills while helping
+            people connect with technology every day.
+
+          </p>
+
+          <p>
+
+            I’m especially interested in software engineering,
+            application development, and creating polished user
+            experiences that feel intuitive, modern, and impactful.
+
+          </p>
+
+        </div>
+
+
+        <div class="about-highlights">
+
+          <div class="highlight-card">
+
+            <span class="highlight-icon">🎓</span>
+
+            <div>
+
+              <span class="highlight-label">
+                Education
+              </span>
+
+              <h3>Syracuse University</h3>
+
+              <p>
+                Computer Science
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="highlight-card">
+
+            <span class="highlight-icon">💻</span>
+
+            <div>
+
+              <span class="highlight-label">
+                Focus
+              </span>
+
+              <h3>Software Development</h3>
+
+              <p>
+                Web, applications & interactive experiences
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="highlight-card">
+
+            <span class="highlight-icon"></span>
+
+            <div>
+
+              <span class="highlight-label">
+                Experience
+              </span>
+
+              <h3>Apple</h3>
+
+              <p>
+                Customer-focused technology experience
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         SKILLS
+    ========================== -->
+
+    <section id="skills" class="section reveal">
+
+      <div class="section-heading">
+
+        <span class="section-number">02.</span>
+
+        <div>
+          <p class="section-label">WHAT I WORK WITH</p>
+          <h2>Skills & Technologies</h2>
+        </div>
+
+      </div>
+
+
+      <div class="skills-grid">
+
+        <div class="skill-category">
+
+          <div class="skill-icon">
+            &lt;/&gt;
+          </div>
+
+          <h3>Web Development</h3>
+
+          <div class="skill-tags">
+
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Responsive Design</span>
+
+          </div>
+
+        </div>
+
+
+        <div class="skill-category">
+
+          <div class="skill-icon">
+            ⚙
+          </div>
+
+          <h3>Programming</h3>
+
+          <div class="skill-tags">
+
+            <span>JavaScript</span>
+            <span>Functional Programming</span>
+            <span>Programming Fundamentals</span>
+            <span>Algorithms</span>
+
+          </div>
+
+        </div>
+
+
+        <div class="skill-category">
+
+          <div class="skill-icon">
+            🛠
+          </div>
+
+          <h3>Tools</h3>
+
+          <div class="skill-tags">
+
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>VS Code</span>
+            <span>GitHub Pages</span>
+
+          </div>
+
+        </div>
+
+
+        <div class="skill-category">
+
+          <div class="skill-icon">
+            🧠
+          </div>
+
+          <h3>Core Strengths</h3>
+
+          <div class="skill-tags">
+
+            <span>Problem Solving</span>
+            <span>Teamwork</span>
+            <span>Communication</span>
+            <span>UI / UX Thinking</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PROJECTS
+    ========================== -->
+
+    <section id="projects" class="section reveal">
+
+      <div class="section-heading">
+
+        <span class="section-number">03.</span>
+
+        <div>
+          <p class="section-label">SELECTED WORK</p>
+          <h2>Featured Projects</h2>
+        </div>
+
+      </div>
+
+
+      <p class="projects-intro">
+
+        A selection of projects where I explored front-end
+        development, JavaScript, interactive experiences,
+        responsive design, and creative problem-solving.
+
       </p>
 
-      <a href="#contact" class="btn">
-        Contact Me
-      </a>
 
-    </div>
+      <div class="projects-grid">
 
-    <div class="hero-image">
-      <img src="profile.jpg" alt="George profile photo">
-    </div>
 
-  </section>
+        <!-- CHARITY WATER -->
 
-  <section id="about" class="section reveal">
+        <article class="project-card featured-project">
 
-    <h2>About Me</h2>
+          <div class="project-visual charity-visual">
 
-    <p>
-      I’m George Abdulky, a Computer Science student at Syracuse University with a passion for technology, design, and building meaningful digital experiences. I enjoy combining creativity with problem-solving, whether that’s developing software projects, designing modern web experiences, or exploring new ideas in tech.
+            <div class="project-browser">
 
-Outside of school, I’ve worked in customer-focused technology roles at Apple, where I developed strong communication, teamwork, and problem-solving skills while helping people connect with technology every day.
+              <div class="browser-bar">
 
-I’m especially interested in software engineering, app development, and creating polished user experiences that feel modern, intuitive, and impactful. My goal is to continue growing as a developer while building projects that showcase both technical ability and creativity.
-can you
-When I’m not coding, I enjoy fitness, soccer, and spending time working on personal projects and ideas for the future.
-    </p>
+                <span></span>
+                <span></span>
+                <span></span>
 
-  </section>
+              </div>
 
-  <section id="skills" class="section reveal">
+              <div class="browser-content">
 
-    <h2>Skills</h2>
+                <div class="water-drop">
+                  💧
+                </div>
 
-    <div class="card-grid">
+                <strong>
+                  Charity: Water
+                </strong>
 
-      <div class="card">
-        <h3>💻 HTML</h3>
-        <p>Modern semantic website structure.</p>
+                <small>
+                  Interactive Game
+                </small>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="project-content">
+
+            <div class="project-top">
+
+              <span class="project-number">
+                01
+              </span>
+
+              <span class="featured-badge">
+                Featured Project
+              </span>
+
+            </div>
+
+
+            <h3>
+              Charity: Water Game
+            </h3>
+
+
+            <p>
+
+              An interactive browser-based experience created
+              around the Charity: Water mission. The project combines
+              gameplay, visual design, and JavaScript interactions to
+              create an engaging experience while connecting users
+              with the importance of access to clean water.
+
+            </p>
+
+
+            <div class="project-tech">
+
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Interactive UI</span>
+
+            </div>
+
+
+            <div class="project-links">
+
+              <a
+                href="https://georgeabdulky.github.io/Completed-Charity-Water-Game/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-btn"
+              >
+                Live Project
+                <span>↗</span>
+              </a>
+
+
+              <a
+                href="https://github.com/georgeabdulky"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-link"
+              >
+                GitHub ↗
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- INTEL -->
+
+        <article class="project-card">
+
+          <div class="project-visual intel-visual">
+
+            <div class="intel-logo-text">
+              intel
+            </div>
+
+            <div class="timeline-demo">
+
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+
+            </div>
+
+            <p>
+              Sustainability Timeline
+            </p>
+
+          </div>
+
+
+          <div class="project-content">
+
+            <div class="project-top">
+
+              <span class="project-number">
+                02
+              </span>
+
+              <span class="project-type">
+                Web Experience
+              </span>
+
+            </div>
+
+
+            <h3>
+              Intel Sustainability Timeline
+            </h3>
+
+
+            <p>
+
+              A responsive interactive timeline highlighting
+              sustainability milestones and environmental initiatives.
+              The experience uses modern layouts, milestone-based
+              storytelling, responsive design, and interactive visual
+              elements.
+
+            </p>
+
+
+            <div class="project-tech">
+
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Responsive Design</span>
+              <span>UI Design</span>
+
+            </div>
+
+
+            <div class="project-links">
+
+              <a
+                href="https://georgeabdulky.github.io/02-prj-intel-sustainability/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-btn"
+              >
+                Live Project
+                <span>↗</span>
+              </a>
+
+              <a
+                href="https://github.com/georgeabdulky"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-link"
+              >
+                GitHub ↗
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- NASA -->
+
+        <article class="project-card">
+
+          <div class="project-visual nasa-visual">
+
+            <div class="planet"></div>
+
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+
+            <div class="stars">
+
+              <span>✦</span>
+              <span>✧</span>
+              <span>✦</span>
+
+            </div>
+
+            <strong>
+              NASA
+            </strong>
+
+            <p>
+              Space Explorer
+            </p>
+
+          </div>
+
+
+          <div class="project-content">
+
+            <div class="project-top">
+
+              <span class="project-number">
+                03
+              </span>
+
+              <span class="project-type">
+                Interactive Web Project
+              </span>
+
+            </div>
+
+
+            <h3>
+              NASA Space Explorer
+            </h3>
+
+
+            <p>
+
+              An interactive space-themed web experience inspired by
+              NASA. The project focuses on combining web development,
+              visual storytelling, and user interaction to create an
+              engaging exploration of space-related content.
+
+            </p>
+
+
+            <div class="project-tech">
+
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Web Design</span>
+
+            </div>
+
+
+            <div class="project-links">
+
+              <!--
+                Replace "#" below with your NASA live GitHub Pages URL
+                once you have it.
+              -->
+
+              <a
+                href="#"
+                class="project-btn disabled-project-link"
+                aria-disabled="true"
+              >
+                Project Link Coming Soon
+              </a>
+
+              <a
+                href="https://github.com/georgeabdulky"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-link"
+              >
+                View GitHub ↗
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- PORTFOLIO -->
+
+        <article class="project-card">
+
+          <div class="project-visual portfolio-visual">
+
+            <div class="code-window">
+
+              <span>
+                &lt;h1&gt;
+              </span>
+
+              <strong>
+                George Abdulky
+              </strong>
+
+              <span>
+                &lt;/h1&gt;
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="project-content">
+
+            <div class="project-top">
+
+              <span class="project-number">
+                04
+              </span>
+
+              <span class="project-type">
+                Personal Project
+              </span>
+
+            </div>
+
+
+            <h3>
+              Personal Portfolio
+            </h3>
+
+
+            <p>
+
+              A responsive personal portfolio designed and developed
+              to showcase my technical skills, projects, education,
+              and professional experience through a modern,
+              interactive interface.
+
+            </p>
+
+
+            <div class="project-tech">
+
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Responsive Design</span>
+
+            </div>
+
+
+            <div class="project-links">
+
+              <a
+                href="#home"
+                class="project-btn"
+              >
+                View Portfolio
+                <span>↑</span>
+              </a>
+
+              <a
+                href="https://github.com/georgeabdulky"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-link"
+              >
+                GitHub ↗
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
       </div>
 
-      <div class="card">
-        <h3>🎨 CSS</h3>
-        <p>Responsive layouts, animations, and UI design.</p>
-      </div>
+    </section>
 
-      <div class="card">
-        <h3>⚡ JavaScript</h3>
-        <p>Interactive websites and front-end functionality.</p>
-      </div>
 
-      <div class="card">
-        <h3>🧠 Problem Solving</h3>
-        <p>Logical thinking and efficient coding solutions.</p>
-      </div>
 
-    </div>
+    <!-- =========================
+         CONTACT
+    ========================== -->
 
-  </section>
+    <section id="contact" class="section contact-section reveal">
 
-  <section id="projects" class="section reveal">
+      <div class="contact-content">
 
-    <h2>Projects</h2>
-
-    <div class="card-grid">
-
-      <div class="card">
-        <h3>Portfolio Website</h3>
-
-        <p>
-          A modern responsive personal portfolio built with
-          HTML, CSS, and JavaScript.
+        <p class="section-label">
+          LET'S CONNECT
         </p>
-      </div>
 
-      <div class="card">
-        <h3>Gym Tracker</h3>
+        <h2>
+          Have an opportunity or an idea?
+          <span>Let’s talk.</span>
+        </h2>
 
-        <p>
-          A personal gym tracker to log workouts, monitor progress, and stay motivated with a clean, interactive interface.
+        <p class="contact-description">
+
+          I’m interested in software engineering opportunities,
+          internships, technology projects, and opportunities to
+          continue learning and building meaningful products.
+
         </p>
+
+
+        <a
+          href="mailto:georgeabdulky@gmail.com"
+          class="btn primary-btn contact-main-btn"
+        >
+          Send Me an Email
+        </a>
+
+
+        <div class="contact-grid">
+
+          <a
+            href="mailto:georgeabdulky@gmail.com"
+            class="contact-card"
+          >
+
+            <span class="contact-icon">
+              ✉
+            </span>
+
+            <div>
+
+              <small>
+                EMAIL
+              </small>
+
+              <strong>
+                georgeabdulky@gmail.com
+              </strong>
+
+            </div>
+
+          </a>
+
+
+          <a
+            href="tel:+13154392107"
+            class="contact-card"
+          >
+
+            <span class="contact-icon">
+              ☎
+            </span>
+
+            <div>
+
+              <small>
+                PHONE
+              </small>
+
+              <strong>
+                (315) 439-2107
+              </strong>
+
+            </div>
+
+          </a>
+
+
+          <a
+            href="https://www.linkedin.com/in/george-abdulky-0949512a0"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card"
+          >
+
+            <span class="contact-icon">
+              in
+            </span>
+
+            <div>
+
+              <small>
+                LINKEDIN
+              </small>
+
+              <strong>
+                Connect with me ↗
+              </strong>
+
+            </div>
+
+          </a>
+
+
+          <a
+            href="https://github.com/georgeabdulky"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card"
+          >
+
+            <span class="contact-icon">
+              &lt;/&gt;
+            </span>
+
+            <div>
+
+              <small>
+                GITHUB
+              </small>
+
+              <strong>
+                View my repositories ↗
+              </strong>
+
+            </div>
+
+          </a>
+
+        </div>
+
+
+        <div class="location">
+
+          <span>●</span>
+
+          Syracuse, New York
+
+        </div>
+
       </div>
 
-    </div>
+    </section>
 
-  </section>
+  </main>
 
-  <section id="contact" class="section reveal">
 
-    <h2>Contact Information</h2>
 
-    <div class="contact-links">
-
-      <a href="mailto:georgeabdulky@gmail.com" class="contact-item">
-        📧 georgeabdulky@gmail.com
-      </a>
-
-      <a href="tel:+13154392107" class="contact-item">
-        📱 (315) 439-2107
-      </a>
-
-      <a href="https://www.linkedin.com/in/george-abdulky-0949512a0"
-         target="_blank"
-         class="contact-item">
-
-         💼 LinkedIn Profile
-
-      </a>
-
-      <a href="https://github.com/georgeabdulky"
-         target="_blank"
-         class="contact-item">
-
-         💻 GitHub Profile
-
-      </a>
-
-      <div class="contact-item location">
-        📍 Syracuse, New York
-      </div>
-
-    </div>
-
-  </section>
+  <!-- =========================
+       FOOTER
+  ========================== -->
 
   <footer>
-    © 2026 George Abdulky. All rights reserved.
+
+    <div class="footer-content">
+
+      <a href="#home" class="footer-logo">
+        George<span>.</span>
+      </a>
+
+      <p>
+        Designed & built by George Abdulky.
+      </p>
+
+      <p class="copyright">
+        © <span id="year"></span> George Abdulky.
+      </p>
+
+    </div>
+
   </footer>
+
 
   <script src="script.js"></script>
 
 </body>
+
 </html>
